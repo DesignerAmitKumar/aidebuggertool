@@ -1,0 +1,140 @@
+<header>
+  <div class="logo">Logo</div>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/it-tech">IT Tech</a></li>
+      </ul>
+  </nav>
+  <div class="controls">
+    <button id="theme-toggle">Dark/Light</button>
+    <div class="search-icon">Search</div>
+  </div>
+</header>
+
+<div class="content-container homepage">
+  <div class="column trending">
+    <h2>Trending Now</h2>
+    <div class="card">...</div>
+    <div class="card">...</div>
+  </div>
+  <div class="column it-tech">
+    <h2>Latest in IT Tech</h2>
+    <ul>
+      <li>...</li>
+      <li>...</li>
+    </ul>
+  </div>
+  <div class="column global-crypto">
+    <h2>Global Perspectives & Crypto Updates</h2>
+    <div class="global-news">...</div>
+    <div class="crypto-news">...</div>
+  </div>
+</div>
+
+<div class="content-container detail-page">
+  <div class="main-content">
+    <h1>Article Title</h1>
+    <img src="..." alt="...">
+    <p>...</p>
+  </div>
+  <div class="sidebar">
+    <h3>Related Articles</h3>
+    <ul>
+      <li>...</li>
+    </ul>
+    </div>
+</div>
+
+<div class="sub-footer">
+  <ul>
+    <li><a href="/privacy">Privacy Policy</a></li>
+    </ul>
+</div>
+
+<footer>
+  <p>© 2025 IT Tech, Global, Crypto News</p>
+  <div class="social-icons">...</div>
+</footer>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+  });
+</script>
+
+<style>
+  /* Basic CSS structure - needs much more detail for actual styling */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body.dark-mode {
+    color: #DEDEDE;
+    background-color: #121212;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #3F51B5;
+  }
+
+  .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #00FFFF;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 20px;
+  }
+
+  .content-container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .homepage .column {
+    flex: 1;
+  }
+
+  .detail-page .main-content {
+    flex: 2;
+  }
+
+  .detail-page .sidebar {
+    flex: 1;
+  }
+
+  .card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .dark-mode .card {
+    background-color: #1E1E1E;
+    border-color: #333;
+  }
+
+  /* ... more CSS for layout, responsiveness, etc. ... */
+</style>
